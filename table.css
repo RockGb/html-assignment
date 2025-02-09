@@ -1,0 +1,123 @@
+#top {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#top a {
+    text-decoration: none;
+    color: #2c3e50;
+    margin-right: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#top a:hover {
+    color: #3498db;
+}
+
+.schools-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin: 20px 0;
+}
+
+.schools-table thead {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+}
+
+.schools-table th {
+    padding: 20px 24px;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.schools-table td {
+    padding: 16px 24px;
+    color: #2c3e50;
+    border-bottom: 1px solid #eef2f7;
+    transition: all 0.3s ease;
+}
+
+.schools-table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.schools-table tbody tr:hover {
+    background-color: #f8faff;
+    transform: translateY(-1px);
+}
+
+.schools-table tbody tr:hover td {
+    color: #3498db;
+}
+
+.schools-table td:first-child {
+    font-weight: 600;
+    color: #2c3e50;
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.schools-table tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 768px) {
+    .schools-table {
+        font-size: 14px;
+        margin: 10px 0;
+        border-radius: 8px;
+    }
+
+    .schools-table th,
+    .schools-table td {
+        padding: 12px 16px;
+    }
+    
+    .schools-table th {
+        font-size: 1em;
+    }
+}
+
+@keyframes tableHover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-2px);
+    }
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
